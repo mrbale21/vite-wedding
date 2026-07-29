@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: Chalisa;
+  src: url("/assets/fonts/ChalisaOctavia.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Prata;
+  src: url("/assets/fonts/Prata.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Palatino;
+  src: url("/assets/fonts/Palatino.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Sacramento;
+  src: url("/assets/fonts/Sacramento.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Dearly;
+  src: url("/assets/fonts/Dearlyloved.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Garamond;
+  src: url("/assets/fonts/EBGaramond.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Duaro;
+  src: url("/assets/fonts/Duaro.otf") format("opentype");
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #4A6FA5;
+  --color-secondary: #F7F5EF;
+  --color-accent: #8FA8C7;
+  --color-neutral: #1E3A5F;
+  --color-ink: #2B2B2B;
+  --color-blue-pale: #C7D5E8;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-Chalisa: Chalisa, "sans-serif";
+  --font-Prata: Prata, "sans-serif";
+  --font-Dearly: Dearly, "sans-serif";
+  --font-Garamond: Garamond, "sans-serif";
+  --font-Palatino: Palatino, "sans-serif";
+  --font-Duaro: Duaro, "sans-serif";
+  --font-Sacramneto: Sacramento, "sans-serif";
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 7s linear infinite;
+  -webkit-animation: spin-slow 7s linear infinite;
+}
+
+.bg-fixed-safe {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .bg-fixed-safe {
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+}

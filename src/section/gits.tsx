@@ -31,7 +31,7 @@ export default function Gift() {
 
   return (
     <section className="w-full bg-secondary pt-24 pb-16 px-4 relative overflow-hidden">
-      <div className="absolute -top-20 left-0 w-full z-30 pointer-events-none opacity-90">
+      <div className="absolute -top-16 left-0 w-full z-30 pointer-events-none opacity-90">
         <img
           src="/assets/images/scene_roof.webp"
           alt=""

@@ -24,17 +24,16 @@ export default function SectionPage() {
     }
   }, [isUnlocked]);
 
-  const [hideIntro, setHideIntro] = useState(false);
-
   useEffect(() => {
-    if (!heroZoom) return;
-
+    if (!isUnlocked) return;
     const t = setTimeout(() => {
-      setHideIntro(true);
-    }, 600);
-
+      const target = document.getElementById("firstPage");
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 200);
     return () => clearTimeout(t);
-  }, [heroZoom]);
+  }, [isUnlocked]);
 
   const toggleMusic = () => {
     if (!audioRef.current) return;
@@ -51,12 +50,10 @@ export default function SectionPage() {
     <div className="w-full bg-secondary text-gray-800 overflow-hidden relative">
       <audio ref={audioRef} src="/assets/music/music.mp3" loop />
 
-      {!hideIntro && (
-        <SectionClient
-          onOpen={() => setIsUnlocked(true)}
-          onZoomStart={() => setHeroZoom(true)}
-        />
-      )}
+      <SectionClient
+        onOpen={() => setIsUnlocked(true)}
+        onZoomStart={() => setHeroZoom(true)}
+      />
 
       <FirstPage triggerConfetti={isUnlocked} heroZoom={heroZoom} />
       <DatePage />

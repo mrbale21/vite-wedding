@@ -197,7 +197,7 @@ export default function FirstPage({
         <motion.div
           animate={{ y: [0, -5, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -top-30 left-0 w-full z-50 pointer-events-none opacity-90"
+          className="absolute -top-28 left-0 w-full z-50 pointer-events-none opacity-90"
         >
           <img
             src="/assets/images/scene_roof.webp"

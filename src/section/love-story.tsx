@@ -6,13 +6,13 @@ const stories = [
   {
     title: "Awal Pertemuan",
     description:
-      "Awal pertemuan di masa sekolah mengenal satu sama lain. Kami sering berbagi cerita dan canda di sela sela waktu luang. Dari perjalanan sederhana itu. Tumbur kenyaman yg mnghadirkan kisah indah bagi kami berdua.",
+      "Awal pertemuan di masa sekolah mengenal satu sama lain. Kami sering berbagi cerita dan canda di sela sela waktu luang. Dari perjalanan sederhana itu. Tumbuh kenyaman yg mnghadirkan kisah indah bagi kami berdua.",
     icon: <Users className="w-8 h-8" />,
   },
   {
     title: "Perjalanan Bersama",
     description:
-      "Di setiap hari libur, kami meluangkan waktu untuk berjalan bersama, menikmati makanan favorit, dan berbincang tentang masa depan. Dari setiap pertemuan, hadir banyak momen hangat yang semakin menguatkan hubungan kami.",
+      "Perjalanan kami bukan pertemuan yang singkat tapi inilah takdir mempersatukan kita kembali, tidak selalu dihiasi tawa. Ada air mata jatuh diam diam, ada ego yang harus di patahkan, dan ada luka yang mengajarkan arti bertahan. Berkali-kali kami belajar bahwa cinta bukan tentang menemukan seseorang yang sempurna, melainkan tentang memilih untuk tetap tinggal meski telah melihat segala kekurangannya. Tetapi juga belajar menjadi yang lebih baik untuk satu sama lain.",
     icon: <Footprints className="w-8 h-8" />,
   },
   {

@@ -22,7 +22,7 @@ export default function DatePage() {
       location: "Kediaman Mempelai Pria",
       icon: "/assets/images/ring.png",
       bg: "/assets/images/image-9.webp",
-      href: "https://maps.app.goo.gl/LsHNFF9VMFBCxMgWA?g_st=ac",
+      href: "https://maps.app.goo.gl/rB851RphHtrvhSXL9?g_st=ac",
     },
   ];
 

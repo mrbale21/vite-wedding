@@ -126,54 +126,53 @@ export default function Gift() {
               kasih, silakan melalui:
             </p>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-3">
               {banks.map((bank, i) => (
                 <div
                   key={bank.id}
                   data-aos="fade-up"
                   data-aos-delay={200 + i * 100}
-                  className="bg-neutral/5 rounded-2xl p-3 sm:p-4 border border-neutral/10 flex flex-col"
+                  className="bg-neutral/5 rounded-xl px-4 py-3 border border-neutral/10 flex items-start gap-3"
                 >
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-10 h-8 sm:w-12 sm:h-9 flex items-center justify-center bg-white rounded-lg p-1.5 shadow-sm shrink-0">
-                      <img
-                        src={bank.logo}
-                        alt={bank.name}
-                        className="max-w-full max-h-full object-contain"
-                      />
-                    </div>
-                    <div className="min-w-0">
-                      <p className="text-[10px] sm:text-[11px] text-neutral/40 font-medium uppercase tracking-wider truncate">
+                  <div className="w-12 h-10 flex items-center justify-center bg-white rounded-lg p-1.5 shadow-sm shrink-0 mt-0.5">
+                    <img
+                      src={bank.logo}
+                      alt={bank.name}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-between  w-full">
+                    <div className="flex justify-between items-center">
+                      <p className="text-[10px] sm:text-[11px] text-neutral/50 font-medium uppercase tracking-wider">
                         {bank.name}
                       </p>
-                      <p className="text-[11px] sm:text-sm font-semibold text-neutral/70 truncate">
+                      <p className="text-[11px] sm:text-sm font-semibold text-neutral/70">
                         a/n {bank.holder}
                       </p>
                     </div>
-                  </div>
-
-                  <div className="flex flex-col gap-2 mt-auto">
-                    <p className="text-[11px] sm:text-sm font-semibold text-neutral tracking-wider font-mono break-all">
-                      {bank.number}
-                    </p>
-                    <button
-                      onClick={() => handleCopy(bank.id, bank.number)}
-                      className={`flex items-center justify-center gap-1 text-[10px] sm:text-xs font-semibold px-2 py-1.5 rounded-lg transition-all duration-200 w-full ${
-                        copied === bank.id
-                          ? "bg-green-100 text-green-700"
-                          : "bg-primary/10 text-primary hover:bg-primary/20"
-                      }`}
-                    >
-                      {copied === bank.id ? (
-                        <>
-                          <Check size={12} /> Tersalin
-                        </>
-                      ) : (
-                        <>
-                          <Copy size={12} /> Salin
-                        </>
-                      )}
-                    </button>
+                    <div className="flex justify-between items-center">
+                      <p className="text-[11px] sm:text-sm font-semibold text-neutral tracking-wider font-mono break-all">
+                        {bank.number}
+                      </p>
+                      <button
+                        onClick={() => handleCopy(bank.id, bank.number)}
+                        className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2.5 py-1 rounded-lg transition-all duration-200 mt-1.5 ${
+                          copied === bank.id
+                            ? "bg-green-100 text-green-700"
+                            : "bg-primary/10 text-primary hover:bg-primary/20"
+                        }`}
+                      >
+                        {copied === bank.id ? (
+                          <>
+                            <Check size={11} /> Copied
+                          </>
+                        ) : (
+                          <>
+                            <Copy size={11} /> Copy
+                          </>
+                        )}
+                      </button>
+                    </div>
                   </div>
                 </div>
               ))}

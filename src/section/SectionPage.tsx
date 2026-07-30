@@ -30,7 +30,7 @@ export default function SectionPage() {
       const target = document.getElementById("firstPage");
       if (target) {
         target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      } 
     }, 200);
     return () => clearTimeout(t);
   }, [isUnlocked]);

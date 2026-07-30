@@ -27,7 +27,7 @@ interface Comment {
   attendance: "hadir" | "tidak-hadir";
 }
 
-const COMMENTS_COLLECTION = "comments-2";
+const COMMENTS_COLLECTION = "comments-yazid-eka";
 
 const formatDate = (date: Date) => {
   const now = new Date();
@@ -142,7 +142,10 @@ const CommentSection: React.FC = () => {
     <div className="px-3 sm:px-4 pb-16 md:pb-20">
       <div className="max-w-4xl mx-auto p-3 sm:p-4 md:p-6 bg-gradient-to-br from-primary to-blue-pale rounded-2xl min-h-screen relative overflow-hidden">
         <div className="absolute -top-2 right-4 z-10 pointer-events-none opacity-25">
-          <SwayingTree src="/assets/images/scene_bird.webp" className="w-[50px] md:w-[70px]" />
+          <SwayingTree
+            src="/assets/images/scene_bird.webp"
+            className="w-[50px] md:w-[70px]"
+          />
         </div>
 
         <div className="text-center mb-6 sm:mb-8">

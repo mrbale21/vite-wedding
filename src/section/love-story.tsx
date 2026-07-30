@@ -6,7 +6,7 @@ const stories = [
   {
     title: "Awal Pertemuan",
     description:
-      "Berawal dari saling sapa dan mengenal satu sama lain. Karena perjalanan pulang kerja yang searah, kami sering berbagi cerita dan canda di sepanjang jalan. Dari perjalanan sederhana itu, tumbuh kenyamanan yang menghadirkan kisah indah bagi kami berdua.",
+      "Awal pertemuan di masa sekolah mengenal satu sama lain. Kami sering berbagi cerita dan canda di sela sela waktu luang. Dari perjalanan sederhana itu. Tumbur kenyaman yg mnghadirkan kisah indah bagi kami berdua.",
     icon: <Users className="w-8 h-8" />,
   },
   {
@@ -23,7 +23,13 @@ const stories = [
   },
 ];
 
-function ConnectingArrow({ isLeft, index }: { isLeft: boolean; index: number }) {
+function ConnectingArrow({
+  isLeft,
+  index,
+}: {
+  isLeft: boolean;
+  index: number;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -52,9 +58,10 @@ function ConnectingArrow({ isLeft, index }: { isLeft: boolean; index: number }) 
           className="text-primary"
         >
           <path
-            d={isLeft
-              ? "M4 14 Q14 10 20 18 L24 14 M20 18 L24 22"
-              : "M24 14 Q14 10 8 18 L4 14 M8 18 L4 22"
+            d={
+              isLeft
+                ? "M4 14 Q14 10 20 18 L24 14 M20 18 L24 22"
+                : "M24 14 Q14 10 8 18 L4 14 M8 18 L4 22"
             }
             stroke="currentColor"
             strokeWidth="1.5"
@@ -63,7 +70,13 @@ function ConnectingArrow({ isLeft, index }: { isLeft: boolean; index: number }) 
             strokeLinejoin="round"
             opacity="0.6"
           />
-          <circle cx={isLeft ? 22 : 6} cy={isLeft ? 16 : 16} r="1.5" fill="currentColor" opacity="0.4" />
+          <circle
+            cx={isLeft ? 22 : 6}
+            cy={isLeft ? 16 : 16}
+            r="1.5"
+            fill="currentColor"
+            opacity="0.4"
+          />
           {[1, 2].map((i) => (
             <circle
               key={i}

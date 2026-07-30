@@ -111,7 +111,7 @@ const Bride: React.FC = () => {
             <h1
               data-aos="fade-right"
               data-aos-delay={30}
-              className="font-Chalisa font-semibold text-3xl text-neutral"
+              className="font-Chalisa font-semibold text-2xl text-neutral"
             >
               M. Zakly Yazidur Rizqi (Yazid)
             </h1>
@@ -124,7 +124,7 @@ const Bride: React.FC = () => {
               Ibu Siti Rohmah
             </p>
             <a
-              href="https://www.instagram.com/yazid_rizqi/"
+              href="https://www.instagram.com/zklyzd_/"
               target="_blank"
               rel="noopener noreferrer"
               data-aos="fade-left"
@@ -132,7 +132,7 @@ const Bride: React.FC = () => {
               className="relative z-50 text-xs font-semibold p-1 px-2 text-center bg-neutral/90 hover:bg-primary/80 text-white rounded-sm flex items-center gap-1 mt-4"
             >
               <FaInstagram />
-              <span>@yazid_rizqi</span>
+              <span>@zklyzd_</span>
             </a>
           </div>
         </div>
@@ -166,7 +166,7 @@ const Bride: React.FC = () => {
               Ibu Eha
             </p>
             <a
-              href="https://www.instagram.com/ekanurlita/"
+              href="https://www.instagram.com/en_lytha24/"
               target="_blank"
               rel="noopener noreferrer"
               data-aos="fade-left"
@@ -174,7 +174,7 @@ const Bride: React.FC = () => {
               className="text-xs font-semibold p-1 px-2 text-center bg-neutral/90 hover:bg-primary/80 text-white rounded-sm flex items-center gap-1 my-4"
             >
               <FaInstagram />
-              <span>@ekanurlita</span>
+              <span>@en_lytha24</span>
             </a>
           </div>
         </div>

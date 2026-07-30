@@ -57,7 +57,7 @@ export default function FirstPage({
       >
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/image-4.webp"
+            src="/assets/images/image-5.webp"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -187,7 +187,7 @@ export default function FirstPage({
       <div className="max-h-auto bg-primary/80 text-white pb-14 -mt-1 flex flex-col items-center z-40 relative">
         <motion.div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/image-7.webp"
+            src="/assets/images/image-4.webp"
             alt=""
             className="w-full h-full object-cover opacity-30"
           />
@@ -195,8 +195,8 @@ export default function FirstPage({
         <div className="absolute top-0 left-0 w-full h-16 bg-white z-0" />
 
         <motion.div
-          animate={{ y: [0, -5, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+          // animate={{ y: [0, -5, 0] }}
+          // transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -top-28 left-0 w-full z-50 pointer-events-none opacity-90"
         >
           <img
@@ -219,8 +219,8 @@ export default function FirstPage({
         </motion.div>
 
         <motion.div
-          animate={{ rotate: [0, 1.5, -1.5, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+          // animate={{ rotate: [0, 1.5, -1.5, 0] }}
+          // transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           className="absolute z-20 top-0 bottom-0 -left-16 opacity-90 pointer-events-none w-[100px] md:w-[160px]"
         >
           <img
@@ -231,8 +231,8 @@ export default function FirstPage({
         </motion.div>
 
         <motion.div
-          animate={{ rotate: [0, -1.2, 1.2, 0] }}
-          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
+          // animate={{ rotate: [0, -1.2, 1.2, 0] }}
+          // transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
           className="absolute z-20 top-0 bottom-0 -right-16 opacity-90 pointer-events-none w-[100px] md:w-[160px]"
         >
           <img

@@ -4,18 +4,32 @@ import SwayingTree from "../components/SwayingTree";
 
 const banks = [
   {
+    id: "btn",
+    name: "BTN",
+    logo: "/assets/images/btn.png",
+    number: "121001500014412",
+    holder: "M. Zakly Yazidur Rizqi",
+  },
+  {
     id: "bca",
     name: "BCA",
     logo: "/assets/images/bca.png",
-    number: "700001214811",
-    holder: "Komarudin",
+    number: "7475279883",
+    holder: "M. Zakly Yazidur Rizqi",
+  },
+  {
+    id: "mandiri",
+    name: "Mandiri",
+    logo: "/assets/images/mandiri.webp",
+    number: "1250014927420",
+    holder: "M. Zakly Yazidur Rizqi",
   },
   {
     id: "dana",
     name: "DANA",
     logo: "/assets/images/dana.png",
-    number: "08573878378",
-    holder: "Komarudin",
+    number: "085714598881",
+    holder: "M. Zakly Yazidur Rizqi",
   },
 ];
 
@@ -112,39 +126,39 @@ export default function Gift() {
               kasih, silakan melalui:
             </p>
 
-            <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-3">
               {banks.map((bank, i) => (
                 <div
                   key={bank.id}
                   data-aos="fade-up"
                   data-aos-delay={200 + i * 100}
-                  className="bg-neutral/5 rounded-2xl p-4 border border-neutral/10"
+                  className="bg-neutral/5 rounded-2xl p-3 sm:p-4 border border-neutral/10 flex flex-col"
                 >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-12 h-9 flex items-center justify-center bg-white rounded-lg p-1.5 shadow-sm">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-10 h-8 sm:w-12 sm:h-9 flex items-center justify-center bg-white rounded-lg p-1.5 shadow-sm shrink-0">
                       <img
                         src={bank.logo}
                         alt={bank.name}
                         className="max-w-full max-h-full object-contain"
                       />
                     </div>
-                    <div>
-                      <p className="text-[11px] text-neutral/40 font-medium uppercase tracking-wider">
+                    <div className="min-w-0">
+                      <p className="text-[10px] sm:text-[11px] text-neutral/40 font-medium uppercase tracking-wider truncate">
                         {bank.name}
                       </p>
-                      <p className="text-sm font-semibold text-neutral/70">
+                      <p className="text-[11px] sm:text-sm font-semibold text-neutral/70 truncate">
                         a/n {bank.holder}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between bg-white rounded-xl border border-neutral/10 px-4 py-2.5">
-                    <p className="text-sm sm:text-base font-semibold text-neutral tracking-wider font-mono">
+                  <div className="flex flex-col gap-2 mt-auto">
+                    <p className="text-[11px] sm:text-sm font-semibold text-neutral tracking-wider font-mono break-all">
                       {bank.number}
                     </p>
                     <button
                       onClick={() => handleCopy(bank.id, bank.number)}
-                      className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 whitespace-nowrap ${
+                      className={`flex items-center justify-center gap-1 text-[10px] sm:text-xs font-semibold px-2 py-1.5 rounded-lg transition-all duration-200 w-full ${
                         copied === bank.id
                           ? "bg-green-100 text-green-700"
                           : "bg-primary/10 text-primary hover:bg-primary/20"
@@ -152,11 +166,11 @@ export default function Gift() {
                     >
                       {copied === bank.id ? (
                         <>
-                          <Check size={14} /> Tersalin
+                          <Check size={12} /> Tersalin
                         </>
                       ) : (
                         <>
-                          <Copy size={14} /> Salin
+                          <Copy size={12} /> Salin
                         </>
                       )}
                     </button>

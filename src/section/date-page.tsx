@@ -13,16 +13,16 @@ export default function DatePage() {
       location: "Kediaman Mempelai Wanita",
       icon: "/assets/images/ring.png",
       bg: "/assets/images/image-11.webp",
-      href: "https://maps.app.goo.gl/T5Nd8fVFs7gnUs158?g_st=ac",
+      href: "https://maps.app.goo.gl/LsHNFF9VMFBCxMgWA?g_st=ac",
     },
     {
       title: "Resepsi",
-      date: "Selasa, 18 Agustus 2026",
+      date: "Senin, 17 Agustus 2026",
       time: "10.00 WIB",
       location: "Kediaman Mempelai Pria",
       icon: "/assets/images/ring.png",
       bg: "/assets/images/image-9.webp",
-      href: "https://maps.app.goo.gl/c8RNM17i4ryVYjAB7?g_st=ac",
+      href: "https://maps.app.goo.gl/LsHNFF9VMFBCxMgWA?g_st=ac",
     },
   ];
 

@@ -11,7 +11,12 @@ import birdsData from "../assets/lottie/birds.json";
 import butterflyData from "../assets/lottie/butterfly.json";
 import SwayingTree from "../components/SwayingTree";
 
-function useParallax(value: MotionValue<number>, distance: number, stiffness = 100, damping = 30) {
+function useParallax(
+  value: MotionValue<number>,
+  distance: number,
+  stiffness = 100,
+  damping = 30,
+) {
   return useSpring(useTransform(value, [0, 1], [0, distance]), {
     stiffness,
     damping,

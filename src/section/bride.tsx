@@ -120,7 +120,7 @@ const Bride: React.FC = () => {
               data-aos-delay={40}
               className="text-start font-Prata text-ink text-[12px]"
             >
-              Putra dari Bapak Aminudin & <br />
+              Putra pertama dari Bapak Aminudin & <br />
               Ibu Siti Rohmah
             </p>
             <a
@@ -162,7 +162,7 @@ const Bride: React.FC = () => {
               data-aos-delay={35}
               className="text-end font-Prata text-[12px] text-ink"
             >
-              Putri dari Bapak Judin (Alm) & <br />
+              Putri pertama dari Bapak Judin (Alm) & <br />
               Ibu Eha
             </p>
             <a

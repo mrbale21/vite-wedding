@@ -122,7 +122,7 @@ const LoveStoryZigzag: React.FC = () => {
         />
       </div>
 
-      <div className="absolute z-20 bottom-160 left-6 opacity-70 pointer-events-none">
+      <div className="absolute z-20 bottom-160 -left-2 opacity-70 pointer-events-none">
         <SwayingTree
           src="/assets/images/scene_bird.webp"
           className="w-[120px] md:w-[250px]"
